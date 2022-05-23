@@ -1,0 +1,196 @@
+/*----General----*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url(photos/carrot_wp1.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bxsd{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*----Navbar----*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: orange;
+}
+nav img{
+    width: 200px;
+    border-radius: 10px 0 10px;
+}
+.nav-link-wrapper ul{
+    display: flex;
+}
+.nav-link-wrapper ul li{
+    list-style: none;
+    margin-right: 20px;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+.nav-link-wrapper ul li:hover{
+    border-bottom: 2px solid green;
+}
+.nav-link-wrapper ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.active-nav{
+    border-bottom: 2px solid green;
+    padding-bottom: 2px;
+}
+nav .bi{
+    display: none;
+}
+@media(max-width: 700px){
+    .nav-link-wrapper{
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        background: green;
+        z-index: 2;
+    }
+    .nav-link-wrapper ul{
+        display: block;
+    }
+    .nav-link-wrapper ul li{
+        margin: 10px;
+    }
+    .nav-link-wrapper ul li a{
+        color: #fff;
+    }
+    nav .bi{
+        display: block;
+        padding: 20px;
+        font-size: 22px;
+        color: #fff;
+    }
+}
+
+/*----Home----*/
+.content{
+    background-color: white;
+    margin: 30px 10% 50px 10%;
+    padding: 30px;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 25px;
+    }
+    .text-box h2{
+        font-size: 22px;
+    }
+}
+
+/*----Hobbies----*/
+.content-hobbies{
+    background-color: white;
+    margin: 30px 10% 50px 10%;
+    padding: 30px;
+}
+@media(max-width: 700px){
+    .content-hobbies article h2{
+        font-size: 20px;
+    }
+}
+
+/*----About----*/
+.about-content{
+    margin: 30px 10% 50px 10%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about-left{
+    padding: 20px;
+}
+.about-img img{
+    width: 100%;
+}
+.about-right{
+    padding: 20px;
+}
+@media(max-width: 700px){
+    .about-content{
+        display: block;
+    }
+    .about-left{
+        padding: 20px 20px 0 20px;
+    }
+}
+
+/*----Social----*/
+.social-content{
+    margin: 30px 10% 50px 10%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.social-lower{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.social-lower div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fb-wrapper{
+    margin-right: 20px;
+}
+.ig-wrapper{
+    margin-right: 20px;
+}
+.social-lower div .bi {
+    font-size: 40px;
+    color: orange;
+}
+@media(max-width: 700px){
+    .social-lower{
+        display: flex;
+        flex-direction: column;
+    }
+    .fb-wrapper{
+        margin: 0 0 20px 0;
+    }
+    .ig-wrapper{
+        margin: 0 0 20px 0;
+    }
+}

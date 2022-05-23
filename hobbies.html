@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <title>Hobbies</title>
+    </head>
+    <body onscroll="hideMenu()">
+        <main class="header">
+            <nav class="bxsd">
+                <a href="index.html"><img src="photos/carrots_logo.png" alt="carrots-logo"></a>
+                <div class="nav-link-wrapper" id="navLinks">
+                    <i class="bi bi-x" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hobbies.html" class="active-nav">Hobbies</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="social.html">Social</a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-list" onclick="showMenu()"></i>
+            </nav>
+            <div class="content-hobbies bxsd">
+                <h1>Hobbies</h1>
+                <article>
+                    <h2>Manga</h2>
+                    <p>During my college days, my time was mostly spent on projects, reviews, and other academic tasks so I don't really have much time for leisure. I can only get a breather when traveling from home to school and vice versa, during lunch breaks, and before going to bed. Reading manga helped me a lot in getting the fun that I needed during these free times. Whenever there's an opportunity to sit down and rest for a while, I immediately grab my phone and read some saved manga. Now, after getting a stable job, I took this hobby to the next level and started buying hard copies from the nearest bookstores.</p>
+                </article>
+                <article>
+                    <h2>Gaming</h2>
+                    <p>This hobby of mine goes way back when I was in high school. A friend introduced the game "Defense of the Ancients", or what's most popularly known as DotA, to me during our free time after school. Since then, I became attached to a lot of online games, be it roleplaying or first-person shooter games. I even bought my own PC so that I can play my favorite games instead of going to internet cafes and rent their PCs for just a few hours.</p>
+                </article>
+                <article>
+                    <h2>Netflix</h2>
+                    <p>Due to the pandemic, a lot of people got stuck inside their homes and that includes me. Last March 2020, the company that I'm working with decided to offer a work-from-home setup so as to lessen the spread of COVID-19 in our workplace. At first I was happy about this decision since I will no longer need to commute everyday. However, as time passed by, I felt the boredom from having too much free time so this was when I decided to subscribe to Netflix. Until now, Netflix still helps me relieve a lot of stress from work. I even share this hobby with my partner whenever we're on our day off.</p>
+                </article>
+            </div>
+        </main>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+    </script>
+    </body>
+</html>
